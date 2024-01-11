@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F34C3F3D2B4BF376008BE7C9 /* Multiboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34C3F3D2B4BF376008BE7C9 /* Pyzh Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pyzh Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34C3F402B4BF376008BE7C9 /* Multiboard App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multiboard App.swift"; sourceTree = "<group>"; };
 		F34C3F442B4BF376008BE7C9 /* Multiboard Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multiboard Item.swift"; sourceTree = "<group>"; };
 		F34C3F462B4BF377008BE7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		F34C3F342B4BF376008BE7C9 = {
 			isa = PBXGroup;
 			children = (
-				F34C3F3F2B4BF376008BE7C9 /* Multiboard */,
+				F34C3F3F2B4BF376008BE7C9 /* iOS */,
 				F34C3F3E2B4BF376008BE7C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,12 +59,12 @@
 		F34C3F3E2B4BF376008BE7C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F34C3F3D2B4BF376008BE7C9 /* Multiboard.app */,
+				F34C3F3D2B4BF376008BE7C9 /* Pyzh Board.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F34C3F3F2B4BF376008BE7C9 /* Multiboard */ = {
+		F34C3F3F2B4BF376008BE7C9 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				F34C3F402B4BF376008BE7C9 /* Multiboard App.swift */,
@@ -79,15 +79,15 @@
 				F34C3F482B4BF377008BE7C9 /* Multiboard.entitlements */,
 				F34C3F4C2B4BF377008BE7C9 /* Info.plist */,
 			);
-			path = Multiboard;
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F34C3F3C2B4BF376008BE7C9 /* Multiboard */ = {
+		F34C3F3C2B4BF376008BE7C9 /* Pyzh Board */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F34C3F4F2B4BF377008BE7C9 /* Build configuration list for PBXNativeTarget "Multiboard" */;
+			buildConfigurationList = F34C3F4F2B4BF377008BE7C9 /* Build configuration list for PBXNativeTarget "Pyzh Board" */;
 			buildPhases = (
 				F34C3F392B4BF376008BE7C9 /* Sources */,
 				F34C3F3A2B4BF376008BE7C9 /* Frameworks */,
@@ -97,13 +97,13 @@
 			);
 			dependencies = (
 			);
-			name = Multiboard;
+			name = "Pyzh Board";
 			packageProductDependencies = (
 				F34C3F592B4C1335008BE7C9 /* ScrechKit */,
 				F3F73CF42B4E984200953D55 /* SafariCover */,
 			);
 			productName = Multiboard;
-			productReference = F34C3F3D2B4BF376008BE7C9 /* Multiboard.app */;
+			productReference = F34C3F3D2B4BF376008BE7C9 /* Pyzh Board.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -121,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F34C3F382B4BF376008BE7C9 /* Build configuration list for PBXProject "Multiboard" */;
+			buildConfigurationList = F34C3F382B4BF376008BE7C9 /* Build configuration list for PBXProject "Pyzh Board" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F34C3F3C2B4BF376008BE7C9 /* Multiboard */,
+				F34C3F3C2B4BF376008BE7C9 /* Pyzh Board */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -280,6 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -292,7 +294,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Multiboard/Multiboard.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iOS/Multiboard.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -300,7 +303,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Multiboard/Info.plist;
+				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pyzh Board";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -310,12 +314,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.topcrech.Multiboard;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topcrech.Pyzh-Board";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -331,7 +335,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Multiboard/Multiboard.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iOS/Multiboard.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -339,7 +344,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Multiboard/Info.plist;
+				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pyzh Board";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -349,12 +355,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.topcrech.Multiboard;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topcrech.Pyzh-Board";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -368,7 +374,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F34C3F382B4BF376008BE7C9 /* Build configuration list for PBXProject "Multiboard" */ = {
+		F34C3F382B4BF376008BE7C9 /* Build configuration list for PBXProject "Pyzh Board" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F34C3F4D2B4BF377008BE7C9 /* Debug */,
@@ -377,7 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F34C3F4F2B4BF377008BE7C9 /* Build configuration list for PBXNativeTarget "Multiboard" */ = {
+		F34C3F4F2B4BF377008BE7C9 /* Build configuration list for PBXNativeTarget "Pyzh Board" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F34C3F502B4BF377008BE7C9 /* Debug */,

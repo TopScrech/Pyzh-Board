@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F34C3F3C2B4BF376008BE7C9"
-               BuildableName = "Multiboard.app"
-               BlueprintName = "Multiboard"
-               ReferencedContainer = "container:Multiboard.xcodeproj">
+               BuildableName = "Pyzh Board.app"
+               BlueprintName = "Pyzh Board"
+               ReferencedContainer = "container:Pyzh Board.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F34C3F3C2B4BF376008BE7C9"
-            BuildableName = "Multiboard.app"
-            BlueprintName = "Multiboard"
-            ReferencedContainer = "container:Multiboard.xcodeproj">
+            BuildableName = "Pyzh Board.app"
+            BlueprintName = "Pyzh Board"
+            ReferencedContainer = "container:Pyzh Board.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -79,9 +79,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F34C3F3C2B4BF376008BE7C9"
-            BuildableName = "Multiboard.app"
-            BlueprintName = "Multiboard"
-            ReferencedContainer = "container:Multiboard.xcodeproj">
+            BuildableName = "Pyzh Board.app"
+            BlueprintName = "Pyzh Board"
+            ReferencedContainer = "container:Pyzh Board.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
