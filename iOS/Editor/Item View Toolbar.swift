@@ -14,6 +14,7 @@ struct ItemViewToolbar: View {
             Section {
                 MenuButton("Delete", role: .destructive, icon: "trash") {
                     item.modelContext?.delete(item)
+                    dismiss()
                 }
             }
         } label: {

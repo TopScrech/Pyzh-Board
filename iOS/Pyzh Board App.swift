@@ -3,7 +3,7 @@ import SwiftData
 import SafariCover
 
 @main
-struct MultiboardApp: App {
+struct PyzhBoard: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([MultiboardItem.self])
         

@@ -37,10 +37,10 @@ struct ItemView: View {
     }
 }
 
-#Preview {
-    NavigationView {
-        ItemView(
-            .init("Preview Title", content: "Preview", createdAt: Date())
-        )
-    }
-}
+//#Preview {
+//    NavigationView {
+//        ItemView(
+//            .init("Preview Title", content: "Preview", createdAt: Date())
+//        )
+//    }
+//}

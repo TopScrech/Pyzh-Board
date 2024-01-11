@@ -40,7 +40,7 @@ struct HomeView: View {
     
     func createItem() {
         modelContext.insert(
-            MultiboardItem("New item", content: "", createdAt: Date())
+            MultiboardItem()
         )
     }
     
