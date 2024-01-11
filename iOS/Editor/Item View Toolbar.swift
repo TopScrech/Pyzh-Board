@@ -2,9 +2,11 @@ import ScrechKit
 
 struct ItemViewToolbar: View {
     @Bindable private var item: MultiboardItem
+    private let dismiss: () -> ()
     
-    init(_ item: MultiboardItem) {
+    init(_ item: MultiboardItem, dismiss: @escaping () -> ()) {
         self.item = item
+        self.dismiss = dismiss
     }
     
     var body: some View {

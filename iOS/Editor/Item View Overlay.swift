@@ -11,9 +11,9 @@ struct ItemViewOverlay: View {
         HStack {
             ShareLink(item: item.content) {
                 Image(systemName: "square.and.arrow.up")
+                    .frame(width: 60, height: 70)
+                    .background(.blue.gradient, in: .rect(cornerRadius: 16))
             }
-            .frame(width: 60, height: 70)
-            .background(.blue.gradient, in: .rect(cornerRadius: 16))
             
             Spacer()
             
@@ -25,9 +25,9 @@ struct ItemViewOverlay: View {
 #endif
             } label: {
                 Image(systemName: "doc.on.doc")
+                    .frame(width: 60, height: 70)
+                    .background(.green.gradient, in: .rect(cornerRadius: 16))
             }
-            .frame(width: 60, height: 70)
-            .background(.green.gradient, in: .rect(cornerRadius: 16))
         }
         .foregroundStyle(.white)
         .title2(.bold)

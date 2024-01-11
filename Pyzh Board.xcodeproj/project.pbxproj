@@ -69,10 +69,8 @@
 			children = (
 				F34C3F402B4BF376008BE7C9 /* Multiboard App.swift */,
 				F34C3F542B4BF56A008BE7C9 /* Item Card.swift */,
-				F34C3F562B4BF5BB008BE7C9 /* Item View.swift */,
-				F3ED95E52B4D479800A490FC /* Item View Overlay.swift */,
+				F3DD12202B50071200586B57 /* Editor */,
 				F34C3F522B4BF3C2008BE7C9 /* Home View.swift */,
-				F3ED95E72B4D47C600A490FC /* Item View Toolbar.swift */,
 				F3F73CF12B4E97B300953D55 /* Settings View.swift */,
 				F34C3F442B4BF376008BE7C9 /* Multiboard Item.swift */,
 				F34C3F462B4BF377008BE7C9 /* Assets.xcassets */,
@@ -80,6 +78,16 @@
 				F34C3F4C2B4BF377008BE7C9 /* Info.plist */,
 			);
 			path = iOS;
+			sourceTree = "<group>";
+		};
+		F3DD12202B50071200586B57 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				F34C3F562B4BF5BB008BE7C9 /* Item View.swift */,
+				F3ED95E52B4D479800A490FC /* Item View Overlay.swift */,
+				F3ED95E72B4D47C600A490FC /* Item View Toolbar.swift */,
+			);
+			path = Editor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

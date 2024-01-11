@@ -27,7 +27,9 @@ struct ItemView: View {
             }
         }
         .toolbar {
-            ItemViewToolbar(item)
+            ItemViewToolbar(item) {
+                dismiss()
+            }
         }
         .overlay(alignment: .bottom) {
             ItemViewOverlay(item)
