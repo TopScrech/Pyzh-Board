@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "safaricover",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/SafariCover",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0a5cf4d1a91e5151608bdba892d64ae9c501b37f"
+      }
+    },
+    {
+      "identity" : "screchkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/ScrechKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a87f95a7ab173b1c26e87c2dfb8b1393043ff2ae"
+      }
+    }
+  ],
+  "version" : 2
+}
