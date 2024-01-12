@@ -6,21 +6,18 @@ struct HomeView: View {
     @Query(animation: .default) private var items: [MultiboardItem]
     
     @State private var sheetSettings = false
+    @AppStorage("grid_view") private var gridView = false
     
     var body: some View {
-        List {
-            ForEach(items) { item in
-                ItemCard(item)
-            }
-            .onDelete(perform: deleteItems)
-            
-            Section {
-                Button("Add") {
-                    createItem()
-                }
+        VStack {
+            if gridView {
+                GridView()
+            } else {
+                ListView()
             }
         }
-        .navigationTitle("Multiboard")
+        .animation(.default, value: gridView)
+        .navigationTitle("Pyzh Board")
         .sheet($sheetSettings) {
             SettingsView()
         }
@@ -29,8 +26,20 @@ struct HomeView: View {
 #endif
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button {
-                    sheetSettings = true
+                Menu {
+                    Button {
+                        gridView.toggle()
+                    } label: {
+                        Label("View Style", systemImage: "rectangle.grid.2x2.fill")
+                    }
+                    
+                    Divider()
+                    
+                    Button {
+                        sheetSettings = true
+                    } label: {
+                        Label("Settings", systemImage: "gear")
+                    }
                 } label: {
                     Image(systemName: "gear")
                 }
@@ -52,6 +61,8 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
-        .modelContainer(for: MultiboardItem.self, inMemory: true)
+    NavigationView {
+        HomeView()
+            .modelContainer(for: MultiboardItem.self, inMemory: true)
+    }
 }

@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct ItemCard: View {
+struct GridItemCard: View {
     @Bindable private var item: MultiboardItem
     
     init(_ item: MultiboardItem) {
@@ -24,6 +24,8 @@ struct ItemCard: View {
                 }
             }
             .foregroundStyle(.foreground)
+            .frame(width: 200, height: 100)
+            .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
         }
         .sheet($sheetEditor) {
             NavigationView {
@@ -39,5 +41,5 @@ struct ItemCard: View {
 }
 
 //#Preview {
-//    ItemCard()
+//    GridItemCard()
 //}
