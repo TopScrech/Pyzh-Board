@@ -33,9 +33,7 @@ struct GridItemCard: View {
             }
         }
         .contextMenu {
-            MenuButton("Delete", role: .destructive, icon: "trash") {
-                item.modelContext?.delete(item)
-            }
+            CardContextMenu(item, sheetEditor: $sheetEditor)
         }
     }
 }

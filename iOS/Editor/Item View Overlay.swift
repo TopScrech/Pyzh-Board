@@ -18,11 +18,7 @@ struct ItemViewOverlay: View {
             Spacer()
             
             Button {
-#if os(macOS)
-                NSPasteboard.general.setString(item.content, forType: .string)
-#else
-                UIPasteboard.general.string = item.content
-#endif
+                copy(item.content)
             } label: {
                 Image(systemName: "doc.on.doc")
                     .frame(width: 60, height: 70)

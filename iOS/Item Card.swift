@@ -11,7 +11,7 @@ struct ItemCard: View {
     
     var body: some View {
         Button {
-            sheetEditor = true
+            copy(item.content)
         } label: {
             VStack(alignment: .leading) {
                 Text(item.name)
@@ -31,9 +31,7 @@ struct ItemCard: View {
             }
         }
         .contextMenu {
-            MenuButton("Delete", role: .destructive, icon: "trash") {
-                item.modelContext?.delete(item)
-            }
+            CardContextMenu(item, sheetEditor: $sheetEditor)
         }
     }
 }

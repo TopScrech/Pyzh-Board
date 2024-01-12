@@ -5,8 +5,9 @@ struct HomeView: View {
     @Environment(\.modelContext) private var modelContext
     @Query(animation: .default) private var items: [MultiboardItem]
     
-    @State private var sheetSettings = false
     @AppStorage("grid_view") private var gridView = false
+    
+    @State private var sheetSettings = false
     
     var body: some View {
         VStack {
@@ -18,12 +19,12 @@ struct HomeView: View {
         }
         .animation(.default, value: gridView)
         .navigationTitle("Pyzh Board")
-        .sheet($sheetSettings) {
-            SettingsView()
-        }
 #if !os(macOS)
         .navigationBarItems(leading: EditButton())
 #endif
+        .sheet($sheetSettings) {
+            SettingsView()
+        }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
