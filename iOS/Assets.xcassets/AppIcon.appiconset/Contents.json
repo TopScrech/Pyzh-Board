@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Utilitius 1024.png",
+      "filename" : "ляп.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -55,6 +55,12 @@
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"
+    },
+    {
+      "filename" : "ляп 1.png",
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "size" : "1024x1024"
     }
   ],
   "info" : {

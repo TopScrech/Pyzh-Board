@@ -6,4 +6,6 @@ func copy(_ text: String) {
 #else
     UIPasteboard.general.string = text
 #endif
+    
+    SystemAlert.copied()
 }

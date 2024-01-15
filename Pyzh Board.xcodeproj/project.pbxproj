@@ -14,12 +14,13 @@
 		F34C3F552B4BF56A008BE7C9 /* Item Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C3F542B4BF56A008BE7C9 /* Item Card.swift */; };
 		F34C3F572B4BF5BB008BE7C9 /* Item View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C3F562B4BF5BB008BE7C9 /* Item View.swift */; };
 		F34C3F5A2B4C1335008BE7C9 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F34C3F592B4C1335008BE7C9 /* ScrechKit */; };
+		F37D97D42B52D65C00F3FCE0 /* AlertKit in Frameworks */ = {isa = PBXBuildFile; productRef = F37D97D32B52D65C00F3FCE0 /* AlertKit */; };
+		F37D97D62B52D68000F3FCE0 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D97D52B52D68000F3FCE0 /* Alerts.swift */; };
 		F3CE83522B512F8A00DBF556 /* List View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE83512B512F8400DBF556 /* List View.swift */; };
 		F3CE83542B512FD200DBF556 /* Grid View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE83532B512FC100DBF556 /* Grid View.swift */; };
 		F3CE83562B5132D400DBF556 /* Grid Item Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE83552B5132AA00DBF556 /* Grid Item Card.swift */; };
 		F3CE83582B514D6500DBF556 /* Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE83572B514D6500DBF556 /* Copy.swift */; };
 		F3CE835A2B514DF800DBF556 /* Card Context Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE83592B514DF800DBF556 /* Card Context Menu.swift */; };
-		F3DD12232B50090900586B57 /* RichTextKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3DD12222B50090900586B57 /* RichTextKit */; };
 		F3ED95E62B4D479800A490FC /* Item View Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED95E52B4D479800A490FC /* Item View Overlay.swift */; };
 		F3ED95E82B4D47C600A490FC /* Item View Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED95E72B4D47C600A490FC /* Item View Toolbar.swift */; };
 		F3F73CF22B4E97B300953D55 /* Settings View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F73CF12B4E97B300953D55 /* Settings View.swift */; };
@@ -36,6 +37,7 @@
 		F34C3F522B4BF3C2008BE7C9 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F34C3F542B4BF56A008BE7C9 /* Item Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item Card.swift"; sourceTree = "<group>"; };
 		F34C3F562B4BF5BB008BE7C9 /* Item View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item View.swift"; sourceTree = "<group>"; };
+		F37D97D52B52D68000F3FCE0 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		F3CE83512B512F8400DBF556 /* List View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List View.swift"; sourceTree = "<group>"; };
 		F3CE83532B512FC100DBF556 /* Grid View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Grid View.swift"; sourceTree = "<group>"; };
 		F3CE83552B5132AA00DBF556 /* Grid Item Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Grid Item Card.swift"; sourceTree = "<group>"; };
@@ -53,7 +55,7 @@
 			files = (
 				F3F73CF52B4E984200953D55 /* SafariCover in Frameworks */,
 				F34C3F5A2B4C1335008BE7C9 /* ScrechKit in Frameworks */,
-				F3DD12232B50090900586B57 /* RichTextKit in Frameworks */,
+				F37D97D42B52D65C00F3FCE0 /* AlertKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,20 +83,37 @@
 			children = (
 				F3CE83572B514D6500DBF556 /* Copy.swift */,
 				F34C3F402B4BF376008BE7C9 /* Pyzh Board App.swift */,
+				F37D97D52B52D68000F3FCE0 /* Alerts.swift */,
+				F3D197532B552E1A00DFC3F4 /* Home */,
 				F3CE83592B514DF800DBF556 /* Card Context Menu.swift */,
 				F34C3F542B4BF56A008BE7C9 /* Item Card.swift */,
 				F3CE83552B5132AA00DBF556 /* Grid Item Card.swift */,
 				F3DD12202B50071200586B57 /* Editor */,
-				F34C3F522B4BF3C2008BE7C9 /* Home View.swift */,
-				F3CE83512B512F8400DBF556 /* List View.swift */,
-				F3CE83532B512FC100DBF556 /* Grid View.swift */,
-				F3F73CF12B4E97B300953D55 /* Settings View.swift */,
+				F3D197522B552E0F00DFC3F4 /* Settings */,
 				F34C3F442B4BF376008BE7C9 /* Multiboard Item.swift */,
 				F34C3F462B4BF377008BE7C9 /* Assets.xcassets */,
 				F34C3F482B4BF377008BE7C9 /* Multiboard.entitlements */,
 				F34C3F4C2B4BF377008BE7C9 /* Info.plist */,
 			);
 			path = iOS;
+			sourceTree = "<group>";
+		};
+		F3D197522B552E0F00DFC3F4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F3F73CF12B4E97B300953D55 /* Settings View.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F3D197532B552E1A00DFC3F4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F34C3F522B4BF3C2008BE7C9 /* Home View.swift */,
+				F3CE83512B512F8400DBF556 /* List View.swift */,
+				F3CE83532B512FC100DBF556 /* Grid View.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		F3DD12202B50071200586B57 /* Editor */ = {
@@ -126,7 +145,7 @@
 			packageProductDependencies = (
 				F34C3F592B4C1335008BE7C9 /* ScrechKit */,
 				F3F73CF42B4E984200953D55 /* SafariCover */,
-				F3DD12222B50090900586B57 /* RichTextKit */,
+				F37D97D32B52D65C00F3FCE0 /* AlertKit */,
 			);
 			productName = Multiboard;
 			productReference = F34C3F3D2B4BF376008BE7C9 /* Pyzh Board.app */;
@@ -160,7 +179,7 @@
 			packageReferences = (
 				F34C3F582B4C1335008BE7C9 /* XCRemoteSwiftPackageReference "ScrechKit" */,
 				F3F73CF32B4E984200953D55 /* XCRemoteSwiftPackageReference "SafariCover" */,
-				F3DD12212B50090900586B57 /* XCRemoteSwiftPackageReference "RichTextKit" */,
+				F37D97D22B52D65C00F3FCE0 /* XCRemoteSwiftPackageReference "AlertKit" */,
 			);
 			productRefGroup = F34C3F3E2B4BF376008BE7C9 /* Products */;
 			projectDirPath = "";
@@ -199,6 +218,7 @@
 				F3ED95E82B4D47C600A490FC /* Item View Toolbar.swift in Sources */,
 				F3CE83542B512FD200DBF556 /* Grid View.swift in Sources */,
 				F3CE83522B512F8A00DBF556 /* List View.swift in Sources */,
+				F37D97D62B52D68000F3FCE0 /* Alerts.swift in Sources */,
 				F3CE83562B5132D400DBF556 /* Grid Item Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,12 +460,12 @@
 				kind = branch;
 			};
 		};
-		F3DD12212B50090900586B57 /* XCRemoteSwiftPackageReference "RichTextKit" */ = {
+		F37D97D22B52D65C00F3FCE0 /* XCRemoteSwiftPackageReference "AlertKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/danielsaidi/RichTextKit";
+			repositoryURL = "https://github.com/sparrowcode/AlertKit";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.5;
+				minimumVersion = 5.1.8;
 			};
 		};
 		F3F73CF32B4E984200953D55 /* XCRemoteSwiftPackageReference "SafariCover" */ = {
@@ -464,10 +484,10 @@
 			package = F34C3F582B4C1335008BE7C9 /* XCRemoteSwiftPackageReference "ScrechKit" */;
 			productName = ScrechKit;
 		};
-		F3DD12222B50090900586B57 /* RichTextKit */ = {
+		F37D97D32B52D65C00F3FCE0 /* AlertKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F3DD12212B50090900586B57 /* XCRemoteSwiftPackageReference "RichTextKit" */;
-			productName = RichTextKit;
+			package = F37D97D22B52D65C00F3FCE0 /* XCRemoteSwiftPackageReference "AlertKit" */;
+			productName = AlertKit;
 		};
 		F3F73CF42B4E984200953D55 /* SafariCover */ = {
 			isa = XCSwiftPackageProductDependency;

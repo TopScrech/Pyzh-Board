@@ -43,6 +43,7 @@ struct HomeView: View {
                     }
                 } label: {
                     Image(systemName: "gear")
+                        .semibold()
                 }
             }
         }

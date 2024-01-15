@@ -8,5 +8,7 @@ final class MultiboardItem {
     var createdAt = Date()
     var modifiedAt: Date?
     
-    init() {}
+    init(content: String = "") {
+        self.content = content
+    }
 }

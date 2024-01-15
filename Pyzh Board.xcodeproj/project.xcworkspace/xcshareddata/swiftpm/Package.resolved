@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "richtextkit",
+      "identity" : "alertkit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/danielsaidi/RichTextKit",
+      "location" : "https://github.com/sparrowcode/AlertKit",
       "state" : {
-        "revision" : "38d0e2cdcb9f860b339ba99b6b1a354fdf0ace8c",
-        "version" : "0.9.5"
+        "revision" : "3d35de60ad26aab58395ebecdd63b533546862ed",
+        "version" : "5.1.8"
       }
     },
     {
