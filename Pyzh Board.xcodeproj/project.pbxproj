@@ -62,6 +62,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F31F4CEA2B5AE21100337DC1 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				F3CE83592B514DF800DBF556 /* Card Context Menu.swift */,
+				F34C3F542B4BF56A008BE7C9 /* Item Card.swift */,
+				F3CE83552B5132AA00DBF556 /* Grid Item Card.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		F34C3F342B4BF376008BE7C9 = {
 			isa = PBXGroup;
 			children = (
@@ -84,13 +94,11 @@
 				F3CE83572B514D6500DBF556 /* Copy.swift */,
 				F34C3F402B4BF376008BE7C9 /* Pyzh Board App.swift */,
 				F37D97D52B52D68000F3FCE0 /* Alerts.swift */,
+				F34C3F442B4BF376008BE7C9 /* Multiboard Item.swift */,
 				F3D197532B552E1A00DFC3F4 /* Home */,
-				F3CE83592B514DF800DBF556 /* Card Context Menu.swift */,
-				F34C3F542B4BF56A008BE7C9 /* Item Card.swift */,
-				F3CE83552B5132AA00DBF556 /* Grid Item Card.swift */,
+				F31F4CEA2B5AE21100337DC1 /* Card */,
 				F3DD12202B50071200586B57 /* Editor */,
 				F3D197522B552E0F00DFC3F4 /* Settings */,
-				F34C3F442B4BF376008BE7C9 /* Multiboard Item.swift */,
 				F34C3F462B4BF377008BE7C9 /* Assets.xcassets */,
 				F34C3F482B4BF377008BE7C9 /* Multiboard.entitlements */,
 				F34C3F4C2B4BF377008BE7C9 /* Info.plist */,

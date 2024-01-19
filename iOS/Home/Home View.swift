@@ -31,7 +31,7 @@ struct HomeView: View {
                     Button {
                         gridView.toggle()
                     } label: {
-                        Label("View Style", systemImage: "rectangle.grid.2x2.fill")
+                        Label("View Style", systemImage: gridView ? "rectangle.grid.1x2.fill" : "rectangle.grid.2x2.fill")
                     }
                     
                     Divider()
@@ -50,9 +50,7 @@ struct HomeView: View {
     }
     
     func createItem() {
-        modelContext.insert(
-            MultiboardItem()
-        )
+        modelContext.insert(MultiboardItem())
     }
     
     private func deleteItems(offsets: IndexSet) {
