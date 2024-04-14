@@ -1,8 +1,9 @@
 import SwiftUI
 
 struct ItemView: View {
-    @Bindable private var item: MultiboardItem
     @Environment(\.dismiss) private var dismiss
+    
+    @Bindable private var item: MultiboardItem
     
     init(_ item: MultiboardItem) {
         self.item = item
