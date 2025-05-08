@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,13 +51,11 @@
 /* Begin PBXFrameworksBuildPhase section */
 		F34C3F3A2B4BF376008BE7C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3F73CF52B4E984200953D55 /* SafariCover in Frameworks */,
 				F34C3F5A2B4C1335008BE7C9 /* ScrechKit in Frameworks */,
 				F37D97D42B52D65C00F3FCE0 /* AlertKit in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -91,17 +89,17 @@
 		F34C3F3F2B4BF376008BE7C9 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3CE83572B514D6500DBF556 /* Copy.swift */,
 				F34C3F402B4BF376008BE7C9 /* Pyzh Board App.swift */,
+				F34C3F4C2B4BF377008BE7C9 /* Info.plist */,
+				F34C3F482B4BF377008BE7C9 /* Multiboard.entitlements */,
+				F34C3F462B4BF377008BE7C9 /* Assets.xcassets */,
+				F3CE83572B514D6500DBF556 /* Copy.swift */,
 				F37D97D52B52D68000F3FCE0 /* Alerts.swift */,
 				F34C3F442B4BF376008BE7C9 /* Multiboard Item.swift */,
 				F3D197532B552E1A00DFC3F4 /* Home */,
 				F31F4CEA2B5AE21100337DC1 /* Card */,
 				F3DD12202B50071200586B57 /* Editor */,
 				F3D197522B552E0F00DFC3F4 /* Settings */,
-				F34C3F462B4BF377008BE7C9 /* Assets.xcassets */,
-				F34C3F482B4BF377008BE7C9 /* Multiboard.entitlements */,
-				F34C3F4C2B4BF377008BE7C9 /* Info.plist */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -147,8 +145,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = "Pyzh Board";
 			packageProductDependencies = (
 				F34C3F592B4C1335008BE7C9 /* ScrechKit */,
@@ -167,7 +163,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					F34C3F3C2B4BF376008BE7C9 = {
 						CreatedOnToolsVersion = 15.2;
@@ -175,7 +171,6 @@
 				};
 			};
 			buildConfigurationList = F34C3F382B4BF376008BE7C9 /* Build configuration list for PBXProject "Pyzh Board" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -189,6 +184,7 @@
 				F3F73CF32B4E984200953D55 /* XCRemoteSwiftPackageReference "SafariCover" */,
 				F37D97D22B52D65C00F3FCE0 /* XCRemoteSwiftPackageReference "AlertKit" */,
 			);
+			preferredProjectObjectVersion = 90;
 			productRefGroup = F34C3F3E2B4BF376008BE7C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,18 +197,15 @@
 /* Begin PBXResourcesBuildPhase section */
 		F34C3F3B2B4BF376008BE7C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F34C3F472B4BF377008BE7C9 /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F34C3F392B4BF376008BE7C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3CE83582B514D6500DBF556 /* Copy.swift in Sources */,
 				F3ED95E62B4D479800A490FC /* Item View Overlay.swift in Sources */,
@@ -229,16 +222,16 @@
 				F37D97D62B52D68000F3FCE0 /* Alerts.swift in Sources */,
 				F3CE83562B5132D400DBF556 /* Grid Item Card.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F34C3F4D2B4BF377008BE7C9 /* Debug */ = {
+		F34C3F4D2B4BF377008BE7C9 /* Debug configuration for PBXProject "Pyzh Board" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -268,6 +261,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -298,11 +292,12 @@
 			};
 			name = Debug;
 		};
-		F34C3F4E2B4BF377008BE7C9 /* Release */ = {
+		F34C3F4E2B4BF377008BE7C9 /* Release configuration for PBXProject "Pyzh Board" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -332,6 +327,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -354,7 +350,7 @@
 			};
 			name = Release;
 		};
-		F34C3F502B4BF377008BE7C9 /* Debug */ = {
+		F34C3F502B4BF377008BE7C9 /* Debug configuration for PBXNativeTarget "Pyzh Board" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -362,7 +358,8 @@
 				CODE_SIGN_ENTITLEMENTS = iOS/Multiboard.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -383,11 +380,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topcrech.Pyzh-Board";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -395,7 +392,7 @@
 			};
 			name = Debug;
 		};
-		F34C3F512B4BF377008BE7C9 /* Release */ = {
+		F34C3F512B4BF377008BE7C9 /* Release configuration for PBXNativeTarget "Pyzh Board" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -403,7 +400,8 @@
 				CODE_SIGN_ENTITLEMENTS = iOS/Multiboard.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -424,11 +422,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topcrech.Pyzh-Board";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -442,19 +440,17 @@
 		F34C3F382B4BF376008BE7C9 /* Build configuration list for PBXProject "Pyzh Board" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F34C3F4D2B4BF377008BE7C9 /* Debug */,
-				F34C3F4E2B4BF377008BE7C9 /* Release */,
+				F34C3F4D2B4BF377008BE7C9 /* Debug configuration for PBXProject "Pyzh Board" */,
+				F34C3F4E2B4BF377008BE7C9 /* Release configuration for PBXProject "Pyzh Board" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F34C3F4F2B4BF377008BE7C9 /* Build configuration list for PBXNativeTarget "Pyzh Board" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F34C3F502B4BF377008BE7C9 /* Debug */,
-				F34C3F512B4BF377008BE7C9 /* Release */,
+				F34C3F502B4BF377008BE7C9 /* Debug configuration for PBXNativeTarget "Pyzh Board" */,
+				F34C3F512B4BF377008BE7C9 /* Release configuration for PBXNativeTarget "Pyzh Board" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */

@@ -26,7 +26,7 @@ struct HomeView: View {
             SettingsView()
         }
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
+//            ToolbarItem(placement: .topBarTrailing) {
                 Menu {
                     Button {
                         gridView.toggle()
@@ -45,7 +45,7 @@ struct HomeView: View {
                     Image(systemName: "gear")
                         .semibold()
                 }
-            }
+//            }
         }
     }
     

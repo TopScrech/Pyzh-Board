@@ -1,12 +1,13 @@
 {
+  "originHash" : "f83452adcda1585e5900461f9e8e5b63d01be8fb9ab6576cad7e901980eb5fdc",
   "pins" : [
     {
       "identity" : "alertkit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sparrowcode/AlertKit",
       "state" : {
-        "revision" : "3d35de60ad26aab58395ebecdd63b533546862ed",
-        "version" : "5.1.8"
+        "revision" : "3b73be8db5a7e7efaf474c6ed919f5a437d843c9",
+        "version" : "5.1.9"
       }
     },
     {
@@ -15,7 +16,7 @@
       "location" : "https://github.com/TopScrech/SafariCover",
       "state" : {
         "branch" : "main",
-        "revision" : "0a5cf4d1a91e5151608bdba892d64ae9c501b37f"
+        "revision" : "6846539c6cf560373fa357fc8df82896705d390c"
       }
     },
     {
@@ -24,9 +25,9 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "a87f95a7ab173b1c26e87c2dfb8b1393043ff2ae"
+        "revision" : "ee68ee7e4b50d9e155b8f886e7f377e08e1f1fa8"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
